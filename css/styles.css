@@ -1,0 +1,211 @@
+body {
+	background-color: #144D7F;
+	color:#BFD4D9;
+	font-family: 'Lato', sans-serif;
+	margin:0;
+}
+
+.fixedwidth {
+	width:90%;
+	margin:0 auto;
+}
+
+.break {
+	clear: both;
+}
+
+header {
+	background-color: #10395C;
+	margin:0;
+	padding:20px 0;
+	padding-bottom:30px;
+	/* position:relative; */
+	border-bottom: 1px solid #289AFF;
+}
+
+/* header:after {
+    background: linear-gradient(-45deg, #144D7F 12px, transparent 0), linear-gradient(45deg, #144D7F 12px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 24px 24px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 24px;
+} */
+
+header h1 {
+	margin:0 35px;
+	color:#BFD4D9;
+	display:inline;
+}
+
+.areaHeader {
+	display:inline-block;
+	padding:5px 10px;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+nav { 
+	display: inline; 
+	margin-left:60px;
+}
+
+nav ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+	/* display: inline; */
+}
+
+nav ul li {
+	padding:10px;
+	font-weight: bold;
+	margin:0 30px;
+	/* display: inline; */
+	cursor: pointer;
+}
+
+nav ul li:hover:not(.activePage) {
+	color:white;
+}
+
+.activePage {
+	background-color:white;
+	color:#10395C;
+	border-radius: 8px;
+}
+
+li img {
+	opacity: 0.85;
+}
+
+li img:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.siteName {
+	margin:10px 0 10px 0;
+	letter-spacing: 1px;
+}
+
+.siteDescription {
+	margin-top:0;
+	font-size: 80%;
+}
+
+.aboutText {
+	padding-left:50px;
+}
+
+#about, #contact {
+	margin-bottom: 40px;
+}
+
+#portfolio ul {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	list-style: none;
+}
+
+#portfolio li {
+	float:left;
+	width:316px;
+	margin:0;
+	height:350px;
+	padding-left:50px;
+}
+
+.hiddenDiv {
+	display: none;
+}
+
+#navButton {
+	display: none;
+}
+
+#mobileIndicator {
+		display: none;
+	}
+
+@media only screen and (min-width: 481px) {
+
+	nav ul, nav ul li {
+		display:inline;
+	}
+
+}	
+
+@media only screen and (max-width: 480px) {
+
+	#mobileIndicator {
+		display: block;
+	}
+
+	nav {
+		display: none;
+		width:100%;
+		margin-top:20px;
+		margin-left:0;
+	}
+
+	.iconBar {
+		display:block;
+		width:32px;
+		height:3px;
+		margin:8px;
+		border-radius:1px;
+		background-color:#fff;
+	}
+
+	#navButton {
+		display:block;
+		float:right;
+		background-color: #10395C;
+		border:none;
+		margin:0px 20px;
+	}
+
+	#menuBar {
+		display: block;
+		background-color: #6991AC;
+		width:100%;
+	}
+
+	.aboutText {
+		padding:0 5px;
+	}
+
+	#portfolio ul {
+		padding:0;
+	}
+
+	#portfolio li {
+		padding-left:5px;
+	}
+
+	nav ul {
+		list-style: none;
+		padding:0;
+		margin:0;
+	}
+
+	nav ul li {
+		padding:10px;
+		font-weight: bold;
+		margin:0 30px;
+		cursor: pointer;
+	}
+
+	nav ul li:hover:not(.activePage) {
+		color:white;
+	}	
+
+}

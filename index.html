@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <title>Portfolio - Paul Wells</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+	<div id="container">
+
+		<div id="mobileIndicator"></div>
+
+		<header>
+			<h1>Paul Wells</h1>
+
+	        <!-- <div id="menuBar">-->
+	            <button id="navButton">
+	                <span class="iconBar"></span>
+	                <span class="iconBar"></span>
+	                <span class="iconBar"></span>
+	            </button>
+	        <!-- </div> -->
+
+			<nav id="navBar">
+				<ul>
+					<li class="link activePage" data-divname="home">Home</li>
+					<li class="link" data-divname="blog">Blog</li>
+					<li class="link" data-divname="contact">Contact</li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<div class="fixedwidth">
+
+			<div id="home" class="activeDiv">
+
+				<div id="about">
+					<h1 class="areaHeader">About Me.</h1>
+					<p class="aboutText">I'm Paul. I'm 33, and I've worked in IT for almost 15 years as an Application Packager and SOE Architect. I'm looking for a change, and am working to get into Web Development.</p>
+					<p class="aboutText">This site aims to document my progress, and showcase the sites I am creating as a way to teach myself various languages and coding skills - I am starting completely from scratch. I already have excellent team work and communication skills, and time management abilities through my previous IT experience. All I need is to improve my development skills, and an opportunity to prove myself.</p>
+				</div>
+
+				<div id="portfolio">
+					
+					<h1 class="areaHeader">Portfolio.</h1>
+					<ul>
+						<li>
+							<a href="../maps/index.html" target="_blank"><img src="img/maps.png"></a>
+							<h3 class="siteName">Postcode Search</h3>
+							<p class="siteDescription">HTML5, CSS, Javascript/jQuery, Google Maps API. Query string entered by the user is sent to the Google API via AJAX, where a post code and map is returned.</p>
+						</li>
+
+						<li>
+							<a href="../youtube-search/index.html" target="_blank"><img src="img/youtubesearch.png"></a>
+							<h3 class="siteName">YouTube Search</h3>
+							<p class="siteDescription">HTML5, CSS, Javascript/jQuery, YouTube API.  Query string entered by the user is sent to the YouTube API via AJAX. Search can be narrowed using filters, and YouTube video results are returned.</p>					
+						</li>
+
+						<li>
+							<a href="../responsive-sample-1/index.html" target="_blank"><img src="img/responsive1.png"></a>
+							<h3 class="siteName">Responsive CSS site</h3>
+							<p class="siteDescription">HTML5, CSS. Media queries used to create layouts for Desktop, Tablet and Mobile.</p>								
+						</li>
+
+						<li>
+							<a href="../content-slider/index.html" target="_blank"><img src="img/contentslider.png"></a>
+							<h3 class="siteName">Content Slider</h3>
+							<p class="siteDescription">HTML5, CSS, Javascript/jQuery. Cycles through various sized images.</p>								
+						</li>
+						<div class="break"></div>
+					</ul>				
+
+				</div>
+
+			</div>
+
+			<div id="blog" class="hiddenDiv">
+				<h1 class="areaHeader">My Blog.</h1>
+				<p class="aboutText">A blog to document my learning. Coming soon!</p>
+			</div>
+
+			<div id="contact" class="hiddenDiv">
+				<h1 class="areaHeader">Contact Me!</h1>
+				<p class="aboutText">E-mail: pwellsau(at)gmail.com</p>
+			</div>			
+
+
+		</div>
+
+	</div>
+
+</body>
+
+
+</html>

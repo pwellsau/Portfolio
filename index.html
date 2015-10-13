@@ -21,25 +21,34 @@
 		    $("#maps").lightBox({
 		        imgpath: 'img/maps-l.png',
 		        title: 'Postcode Search',
-		        text: 'HTML5, CSS, Javascript/jQuery, Google Maps API.' +
-		        'Query string entered by the user is sent to the Google API via AJAX, where a post code and map is returned.',
-		        link: ['http://www.pwells.com/maps'],
-		        linkText: ['See the site in full']
+		        text: '<p>HTML5, CSS, Javascript/jQuery, Google Maps API.</p>' +
+		        '<p>Query string entered by the user is sent to the Google API via AJAX, where a post code and map is returned.</p>' +
+		        '<p>This is the first full site I completed, after learning HTML and CSS, and the basics of Javascript and jQuery, through a Udemy online course.  As an exercise, ' +
+		        'the task was to create a basic page which used AJAX to retrieve a post code of an address entered by the user, and output it to the page.</p>' +
+		        '<p>I took this further. I referred to the Google Maps API documentation, and learned how to add a map of the address entered by the user to the page. I filtered results ' +
+		        'when more than one result was found, and catered for errors returned by the status node in the XML file.</p>',
+		        link: ['http://www.pwells.com/maps', 'https://www.udemy.com/complete-web-developer-course', 'https://developers.google.com/maps/documentation/javascript/tutorial'],
+		        linkText: ['See the site in full', 'Udemy course', 'Google Maps Javascript API Tutorial']
 		    });   
 
 		    $("#youtubesearch").lightBox({
 		        imgpath: 'img/youtubesearch-l.png',
 		        title: 'YouTube Search',
-		        text: 'HTML5, CSS, Javascript/jQuery, YouTube API.' +
-		        'Query string entered by the user is sent to the YouTube API via AJAX. Search can be narrowed using filters, and YouTube video results are returned.',
-		        link: ['http://www.pwells.com/youtube-search'],
-		        linkText: ['See the site in full']
+		        text: '<p>HTML5, CSS, Javascript/jQuery, YouTube API.</p>' +
+		        '<p>Query string entered by the user is sent to the YouTube API via AJAX. Search can be narrowed using filters, and YouTube video results are returned.<p>' +
+		        '<p>Similar to the Postcode Search page, The idea for this came from an exercise in a Udemy course. I am using AJAX to retrieve YouTube results based on a user inputted string. ' +
+		        'This time, I have used $.get instead of $.ajax. The returned data is an object, for which I then have a function to display the results on the page. </p>' +
+		        '<p>Once again, I took this further, by adding filtering options for the user, which allowed the user to customise what was returned in the results. ' +
+		        'Additionally, I have written code to display the video in a lightbox centered on the page, where as the course used a plugin to do this.</p>',
+		        link: ['http://www.pwells.com/youtube-search', 'https://www.udemy.com/projects-in-javascript-jquery', 'https://developers.google.com/youtube/v3/docs/'],
+		        linkText: ['See the site in full', 'Udemy course', 'YouTube Data API Tutorial']
 		    });
 
 		    $("#resp1").lightBox({
 		        imgpath: 'img/responsive1-l.png',
 		        title: 'Responsive CSS site',
-		        text: 'HTML5, CSS. Media queries used to create layouts for Desktop, Tablet and Mobile.',
+		        text: '<p>HTML5, CSS. Media queries used to create layouts for Desktop, Tablet and Mobile., baased on screen resolution.<p>' +
+		        '<p>Basic Navbar, visible on devices less than 480px wide, which expands and collapses using jQuery.  All code written by hand without the use of frameworks.</p>',
 		        link: ['http://www.pwells.com/responsive-sample-1'],
 		        linkText: ['See the site in full']
 		    });
@@ -90,7 +99,7 @@
 				<div id="about">
 					<h1 class="areaHeader">About Me.</h1>
 					<p class="aboutText">I'm Paul. I'm 33, and I've worked in IT for almost 15 years as an Application Packager and SOE Architect. I'm looking for a change, and am working to get into Web Development.</p>
-					<p class="aboutText">This site aims to document my progress, and showcase the sites I am creating as a way to teach myself various languages and coding skills - I am starting completely from scratch. I already have excellent team work and communication skills, and time management abilities through my previous IT experience. All I need is to improve my development skills, and an opportunity to prove myself.</p>
+					<p class="aboutText">This site aims to document my progress, and show the sites I am creating as a way to teach myself various languages and coding skills.  I am learning mostly from online courses found on udemy.com, w3schools.com and codeacademy.com, as well as the many other online resources such as forums and Stack Overflow. I already have excellent team work and communication skills, and time management abilities through my previous IT experience. All I need is to improve my development skills, and an opportunity to prove myself.</p>
 				</div>
 
 				<div id="portfolio">
